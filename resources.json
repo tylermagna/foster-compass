@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Hope Center for Former Foster Youth",
+    "category": "General support / case management",
+    "who_it_helps": "Young people who are in or have aged out of foster care",
+    "description": "Programs and support for former foster youth, including help with housing stability and life skills.",
+    "contact": "Phone: 919-636-3641 or 919-828-0897 | Web: hopecenteratpullen.org",
+    "location": "Wake County, NC"
+  },
+  {
+    "name": "United Way 211",
+    "category": "Find local help (housing, food, utilities)",
+    "who_it_helps": "Anyone in the U.S. who needs to find local services",
+    "description": "A free, confidential service that connects people to local resources like housing, food, and financial assistance.",
+    "contact": "Dial 211, or visit 211.org",
+    "location": "Nationwide (U.S.)"
+  },
+  {
+    "name": "Fostering Bright Futures",
+    "category": "Education / Financial Aid",
+    "who_it_helps": "Former foster youth ages 16-25 attending Wake Tech",
+    "description": "A student success program at Wake Tech offering case management, mentoring, and financial support for former foster youth.",
+    "contact": "Phone: 919-866-5485 | Email: drsinodis@waketech.edu",
+    "location": "Raleigh, NC (Wake Tech Southern Wake Campus)"
+  },
+  {
+    "name": "Medicaid for Former Foster Youth",
+    "category": "Healthcare",
+    "who_it_helps": "Young adults under 26 who aged out of foster care",
+    "description": "Free continuous Medicaid health coverage for young adults who were in foster care and receiving Medicaid at age 18.",
+    "contact": "Phone: 888-245-0179 | Web: epass.nc.gov",
+    "location": "North Carolina"
+  },
+  {
+    "name": "Haven House Services (Coordinated Entry)",
+    "category": "Housing / Homelessness",
+    "who_it_helps": "Young adults ages 18-24 facing homelessness",
+    "description": "The primary Coordinated Entry site for young adults (18-24) facing homelessness in Wake County to complete intake and access housing.",
+    "contact": "Phone: 919-980-2015 (leave a message for intake)",
+    "location": "Wake County, NC"
+  },
+  {
+    "name": "Wrenn House",
+    "category": "Housing / Homelessness",
+    "who_it_helps": "Youth in crisis ages 10-17",
+    "description": "A 24-hour crisis shelter for runaway, homeless, or in-crisis youth providing a safe environment and case management.",
+    "contact": "Phone: 919-832-7866 | Address: 908 W. Morgan Street, Raleigh, NC",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "Housing Authority of the County of Wake",
+    "category": "Housing",
+    "who_it_helps": "Low-income individuals and families",
+    "description": "Manages public housing units and provides Section 8 housing choice vouchers to help subsidize rent for eligible individuals.",
+    "contact": "Phone: 919-856-5906 | Email: Housing.Rehab@wake.gov",
+    "location": "Wake County, NC"
+  },
+  {
+    "name": "Wake County Food and Nutrition Services (FNS)",
+    "category": "Food Assistance",
+    "who_it_helps": "Low-income individuals needing food assistance",
+    "description": "State assistance program providing EBT cards for food purchasing (formerly known as food stamps).",
+    "contact": "Phone: 1-866-719-0141 | Address: 220 Swinburne St., Raleigh, NC",
+    "location": "Wake County, NC"
+  },
+  {
+    "name": "NC LINKS Program",
+    "category": "General support / case management",
+    "who_it_helps": "Foster youth ages 13-21 transitioning to adulthood",
+    "description": "Provides social workers to help foster youth develop independent living skills, housing, education, and finances.",
+    "contact": "Phone: 919-212-7000 (Ask for Wake County DSS LINKS coordinator)",
+    "location": "Wake County, NC"
+  },
+  {
+    "name": "SaySo (Strong Able Youth Speaking Out)",
+    "category": "Advocacy / Peer Support",
+    "who_it_helps": "Youth ages 14 to 24 who are or were in out-of-home care",
+    "description": "A statewide association in NC providing peer support networks, transition resources, and advocacy for foster youth.",
+    "contact": "Phone: 800-820-0001 | Web: saysoinc.org",
+    "location": "Durham / Statewide NC"
+  },
+  {
+    "name": "Oak City Cares",
+    "category": "Basic Needs",
+    "who_it_helps": "Individuals and families experiencing homelessness",
+    "description": "A multi-services hub providing weekend meals, showers, laundry, computers, and connection to housing resources.",
+    "contact": "Phone: 984-344-9599 | Address: 1430 S. Wilmington Street, Raleigh, NC",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "The Green Chair Project",
+    "category": "Housing / Basic Needs",
+    "who_it_helps": "Individuals transitioning into independent housing",
+    "description": "A nonprofit that provides gently used furniture and essential household items for people moving into new housing.",
+    "contact": "Phone: 919-322-0474 | Web: thegreenchair.org",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "NCWorks Career Center (Swinburne)",
+    "category": "Employment / Career Services",
+    "who_it_helps": "Adults seeking employment and training",
+    "description": "Provides adult career services, resume assistance, job placement, and workforce training resources.",
+    "contact": "Phone: 919-250-3770 | Address: 220 Swinburne Street, Raleigh, NC",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "Transition in Place (TIP) Program",
+    "category": "Housing",
+    "who_it_helps": "Homeless young adults ages 18-23",
+    "description": "Provides safe housing, intensive case management, and rental subsidies (up to 12 months) via Haven House.",
+    "contact": "Phone: 919-833-3312 (Access via Haven House Street Outreach)",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "NC Reach Scholarship",
+    "category": "Education / Financial Aid",
+    "who_it_helps": "Former NC foster youth attending public college",
+    "description": "A state-funded scholarship covering tuition and living expenses for up to 4 years at NC public universities or community colleges.",
+    "contact": "Web: ncreach.org",
+    "location": "North Carolina"
+  },
+  {
+    "name": "Education Training Voucher (ETV) Program",
+    "category": "Education / Financial Aid",
+    "who_it_helps": "Former foster youth enrolled in post-secondary education",
+    "description": "A federally funded grant offering up to $5,000 per year for college or vocational training.",
+    "contact": "Web: fc2sprograms.org/north-carolina",
+    "location": "North Carolina"
+  },
+  {
+    "name": "South Wilmington Street Center",
+    "category": "Housing / Homelessness",
+    "who_it_helps": "Homeless men",
+    "description": "An emergency and transitional shelter providing overnight beds, case management, and budgeting assistance.",
+    "contact": "Phone: 919-857-9428 | Address: 1420 S. Wilmington St., Raleigh, NC",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "Cornerstone Center",
+    "category": "General support / Basic Needs",
+    "who_it_helps": "Homeless individuals",
+    "description": "A multiservice center providing crisis intervention, mental health/substance abuse services, and identification/mail assistance.",
+    "contact": "Address: 220 Snow Ave., Raleigh, NC (Walk-in daytime hours)",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "Salvation Army of Wake County",
+    "category": "Food Assistance",
+    "who_it_helps": "Individuals facing food insecurity",
+    "description": "Provides free daily evening meals and emergency assistance for the local community.",
+    "contact": "Phone: 919-834-6733 | Address: 1863 Capital Boulevard, Raleigh, NC",
+    "location": "Raleigh, NC"
+  },
+  {
+    "name": "Wake County DSS - Foster Care & Vital Documents",
+    "category": "General support / Basic Needs",
+    "who_it_helps": "Foster youth needing vital records",
+    "description": "Can assist former foster youth in obtaining copies of birth certificates and providing case records for transition.",
+    "contact": "Phone: 919-212-7000 | Address: 220 Swinburne St., Raleigh, NC",
+    "location": "Wake County, NC"
+  }
+]
