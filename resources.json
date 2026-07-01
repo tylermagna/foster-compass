@@ -1,5 +1,29 @@
 [
   {
+    "name": "988 Suicide & Crisis Lifeline",
+    "category": "Crisis / Safety (urgent)",
+    "who_it_helps": "Anyone in emotional distress, crisis, or thinking about suicide; available 24/7",
+    "description": "Free, confidential crisis support by call or text, any time, day or night.",
+    "contact": "Call or text 988 | Web: 988lifeline.org",
+    "location": "Nationwide (U.S.)"
+  },
+  {
+    "name": "National Runaway Safeline",
+    "category": "Crisis / Safety (urgent)",
+    "who_it_helps": "Young people who are homeless, have run away, or feel unsafe; available 24/7",
+    "description": "Free, confidential 24/7 crisis line and support for youth and young adults who are unsafe, on the streets, or thinking about running.",
+    "contact": "Call or text 1-800-786-2929 | Web: 1800runaway.org",
+    "location": "Nationwide (U.S.)"
+  },
+  {
+    "name": "National Domestic Violence Hotline",
+    "category": "Crisis / Safety (urgent)",
+    "who_it_helps": "Anyone experiencing abuse or an unsafe relationship; available 24/7",
+    "description": "Free, confidential 24/7 support for people experiencing domestic or dating violence, including help making a safety plan.",
+    "contact": "Call 1-800-799-7233, or text START to 88788 | Web: thehotline.org",
+    "location": "Nationwide (U.S.)"
+  },
+  {
     "name": "Hope Center for Former Foster Youth",
     "category": "General support / case management",
     "who_it_helps": "Young people who are in or have aged out of foster care",
