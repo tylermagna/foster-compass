@@ -82,6 +82,7 @@ if "messages" not in st.session_state:
 queued = st.session_state.pop("pending", None)
 
 st.title("\U0001F9ED Foster Compass")
+st.markdown("#### \U0001F4CD Serving Wake County, NC")
 st.caption(
     "A friendly guide to resources for youth aging out of foster care. "
     "This is not professional advice \u2014 for anything urgent, please talk to a real person."
