@@ -3,32 +3,29 @@ import json
 import streamlit as st
 from anthropic import Anthropic
 
-# Compass — a friendly resource guide for youth aging out of foster care.
-
-MODEL = "claude-sonnet-4-6"   # Capable + cost-effective. Swap to "claude-haiku-4-5-20251001" to cut cost.
+MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 700
 
-st.set_page_config(page_title="Compass", page_icon="\U0001F9ED")
+st.set_page_config(page_title="Foster Compass", page_icon="\U0001F9ED")
 
-# ---- Load your API key. NEVER paste the key into this file. ----
-# On Streamlit Community Cloud: add it under Settings > Secrets as ANTHROPIC_API_KEY.
-# Running locally: set an environment variable named ANTHROPIC_API_KEY (see the README).
+
 def get_api_key():
     try:
         return st.secrets["ANTHROPIC_API_KEY"]
     except Exception:
         return os.environ.get("ANTHROPIC_API_KEY")
 
+
 api_key = get_api_key()
 if not api_key:
-    st.error("No API key found. Add ANTHROPIC_API_KEY in Streamlit secrets or your environment. See the README.")
+    st.error("No API key found. Set ANTHROPIC_API_KEY in Streamlit secrets or your environment.")
     st.stop()
 
 client = Anthropic(api_key=api_key)
 
-# ---- Load the resource knowledge base from resources.json ----
 with open("resources.json", "r") as f:
     resources = json.load(f)
+
 
 def format_resources(items):
     blocks = []
@@ -50,6 +47,7 @@ def format_resources(items):
         )
     return "\n".join(blocks)
 
+
 SYSTEM_PROMPT = (
     "You are Foster Compass, a warm, plain-spoken guide for young people who are aging out of "
     "(or have recently aged out of) foster care. Your job is to help them find the right "
@@ -63,26 +61,47 @@ SYSTEM_PROMPT = (
     "4. You are not a lawyer, doctor, or financial advisor. For anything legal, medical, or "
     "urgent, encourage them to talk to a real person and offer the most relevant resource.\n"
     "5. Keep answers short, kind, and easy to read. Assume the person may be stressed or in a hurry.\n"
-    "6. If someone seems to be in crisis or danger, gently encourage them to contact emergency "
-    "services or a crisis line right away.\n\n"
+    "6. If someone seems to be in crisis or in danger, treat it as the priority: point them to the "
+    "crisis and safety resources below (such as 988 or the National Runaway Safeline), encourage "
+    "them to reach out right away, and remind them they can call 911 for an immediate emergency.\n\n"
     "Here are the resources you can draw from:\n" + format_resources(resources)
 )
 
-# ---- Simple chat interface ----
+EXAMPLES = [
+    "I need help finding housing.",
+    "How do I get health insurance after foster care?",
+    "Can I get money for college?",
+    "I need food this week.",
+    "How do I get a copy of my birth certificate?",
+    "I'm in crisis and need help now.",
+]
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+queued = st.session_state.pop("pending", None)
+
 st.title("\U0001F9ED Foster Compass")
 st.caption(
     "A friendly guide to resources for youth aging out of foster care. "
     "This is not professional advice \u2014 for anything urgent, please talk to a real person."
 )
 
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
 for m in st.session_state.messages:
     with st.chat_message(m["role"]):
         st.markdown(m["content"])
 
-prompt = st.chat_input("Ask a question \u2014 for example: I need help finding housing.")
+if not st.session_state.messages and not queued:
+    st.markdown("**Not sure where to start? Tap a question:**")
+    cols = st.columns(2)
+    for i, ex in enumerate(EXAMPLES):
+        if cols[i % 2].button(ex, key="ex_{}".format(i), use_container_width=True):
+            st.session_state.pending = ex
+            st.rerun()
+
+typed = st.chat_input("Ask a question \u2014 for example: I need help finding housing.")
+prompt = typed or queued
+
 if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
